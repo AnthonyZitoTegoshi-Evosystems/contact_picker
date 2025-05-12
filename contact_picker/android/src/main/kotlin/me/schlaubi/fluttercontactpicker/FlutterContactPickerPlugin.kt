@@ -40,10 +40,6 @@ class FlutterContactPickerPlugin : AbstractFlutterContactPickerPlugin(), Flutter
     override fun onDetachedFromActivityForConfigChanges(): Unit = onDetachedFromActivity()
 
     companion object {
-        @JvmStatic
-        @Suppress("unused", "deprecation") // Backwards compatibility for v1 plugins
-        fun registerWith(registrar: PluginRegistry.Registrar) = LegacyFlutterContactPickerPlugin(registrar)
-
         const val PICK_PHONE = 2015
         const val PICK_EMAIL = 2020
         const val PICK_CONTACT = 2029
